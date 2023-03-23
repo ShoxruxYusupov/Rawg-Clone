@@ -1,0 +1,97 @@
+.load {
+  margin-top: 3%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+.sfera {
+  width: 15px;
+  height: 15px;
+  background-color: var(--text-color);
+  border-radius: 100px;
+  transform: translateY(-50%);
+  position: absolute;
+}
+
+@keyframes spishka {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+.s1 {
+  animation: spishka 0.5s infinite;
+  animation-delay: 0.05s;
+  top: 50%;
+  left: -20%;
+}
+.s2 {
+  animation: spishka 0.5s infinite;
+  animation-delay: 0.2s;
+  top: 80%;
+  left: -12%;
+}
+.s3 {
+  animation: spishka 0.5s infinite;
+  animation-delay: 0.4s;
+  top: 100%;
+  left: 8%;
+}
+.big_sfera {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  background-color: transparent;
+  border-radius: 1000px;
+  animation: load 0.9s infinite linear;
+}
+.loader {
+  position: absolute;
+}
+.stenka {
+  width: 200px;
+  height: 70px;
+  position: absolute;
+  top: 70%;
+  left: -35%;
+  transform: translateY(-50%);
+  background-color: var(--main-bg-color);
+}
+
+@keyframes load {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(210deg);
+  }
+}
+
+#b {
+  cursor: pointer;
+  overflow: hidden;
+  width: 70px;
+  height: 40px;
+  position: relative;
+  padding: 7px 5px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(35, 117, 230);
+}
+
+@media (max-width: 973px) {
+  .load {
+    height: 80vh;
+    margin-top: 0;
+  }
+}

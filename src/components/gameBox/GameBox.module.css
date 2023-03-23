@@ -1,0 +1,99 @@
+.gameBox {
+  position: relative;
+  background-color: var(--box-bg-color);
+  border-radius: var(--box-border-rad);
+  height: fit-content;
+  color: var(--text-color);
+  transition: 0.3s;
+  z-index: 1;
+}
+
+.img img {
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: var(--box-border-rad);
+  border-top-right-radius: var(--box-border-rad);
+}
+
+.info {
+  padding: 10px;
+  padding-bottom: 20px;
+}
+.text{
+  padding: 10px;
+}
+.text a {
+  color: var(--text-color);
+  transition: .2s;
+}
+.text a:hover {
+  color: rgba(255, 255, 255, 0.65);
+}
+.text p {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  width: min-content;
+  padding: 5px 7px;
+  background-color: #373737;
+  border-radius: var(--input-border-rad);
+}
+
+.text p span {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.gameBox:hover {
+  transform: scale(1.05);
+  z-index: 90;
+}
+
+.gameBox:hover .dropdown {
+  height: min-content;
+}
+
+.info .dropdown {
+  height: 0;
+  overflow: hidden;
+
+  position: absolute;
+  top: 95%;
+  left: 0;
+
+  padding: 0 10px;
+  width: 100%;
+  z-index: 100;
+  background-color: var(--box-bg-color);
+  width: 100%;
+  border-bottom-left-radius: var(--box-border-rad);
+  border-bottom-right-radius: var(--box-border-rad);
+}
+
+.info .dropdown li {
+  padding: 15px 0;
+  border-top: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dropdown li > p {
+  color: gray;
+  font-size: 14px;
+}
+.dropdown li span {
+  display: flex;
+  gap: 5px;
+}
+.dropdown li span p {
+  color: var(--text-color);
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+@media (max-width: 973px) {
+  .gameBox {
+    width: 90%;
+    margin: 0 auto;
+  }
+}

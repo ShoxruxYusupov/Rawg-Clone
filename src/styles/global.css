@@ -1,0 +1,50 @@
+html{
+  scroll-behavior: smooth;
+}
+
+.App{
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.head{
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+img {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1400px;
+  width: 95%;
+  margin: 0 auto;
+  z-index: 10;
+}
+
+.layout {
+  display: flex;
+}
+
+/* Scroll */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgba(0, 0, 0, 0.205);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #032541;
+}

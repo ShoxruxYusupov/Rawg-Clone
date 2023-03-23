@@ -1,0 +1,76 @@
+.mouseScroll {
+  width: 40px;
+  height: 60px;
+  position: fixed;
+  bottom: 60px;
+  right: 10px;
+  z-index: 9999;
+  background-color: transparent;
+  border: none;
+  border: 1px solid #fff;
+  transition: .2s;
+  cursor: pointer;
+  transform: rotate(180deg);
+}
+
+.mouseScroll:hover {
+    background-color: rgba(255, 255, 255, 0.17);
+}
+
+.str {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mouseScroll span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  margin: 2px 0;
+}
+.mouseScroll .downArrow1 {
+  margin-top: 6px;
+}
+.mouseScroll .downArrow1,
+.mouseScroll .downArrow2,
+.mouseScroll .downArrow3 {
+  animation: mouse-scroll 1s infinite;
+}
+#mouse-croll .downArrow1 {
+  animation-delay: 0.1s;
+}
+.mouseScroll .downArrow2 {
+  animation-delay: 0.33s;
+}
+.mouseScroll .downArrow3 {
+  animation-delay: 0.66s;
+}
+@-webkit-keyframes mouse-scroll {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

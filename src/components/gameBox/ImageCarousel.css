@@ -1,0 +1,49 @@
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 170px;
+}
+
+.carousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  transition: background-image 0.1s ease-in-out;
+  border-radius: var(--box-border-rad);
+}
+
+.buttons {
+  display: none;
+  transition: 0.2s;
+  width: 100%;
+  position: absolute;
+  padding: 5px;
+  bottom: 0;
+  left: 0;
+}
+
+.navButton {
+  transition: 0.2s;
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 5px;
+  width: 100%;
+  border-radius: 10px;
+  margin: 0 6px;
+}
+
+.carousel-container:hover .buttons {
+  display: flex;
+}
+
+@media (max-width: 973px) {
+  .carousel-container {
+    height: 370px;
+  }
+  .buttons {
+    display: flex;
+  }
+}

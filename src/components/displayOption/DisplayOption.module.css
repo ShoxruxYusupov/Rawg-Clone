@@ -1,0 +1,26 @@
+.options {
+  width: 100%;
+  padding: 1% 0;
+}
+
+[id^='radio-'] {
+  display: none;
+}
+
+[id^='radio-'] + label {
+  padding: 5px;
+  display: inline-block;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.2s;
+}
+
+[id^='radio-']:checked + label {
+  opacity: 1;
+}
+
+@media (max-width: 973px) {
+  .options{
+    display: none;
+  }
+}

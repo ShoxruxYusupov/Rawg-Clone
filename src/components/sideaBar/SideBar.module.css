@@ -1,0 +1,85 @@
+.sideBar {
+  flex: 1.7;
+  color: var(--text-color);
+}
+
+.home li {
+  color: var(--text-color);
+  font-size: 24px !important;
+  font-weight: 700;
+}
+
+.ul h2 {
+  padding: 5px 0;
+  font-size: 24px;
+}
+.ul a {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  transition: 0.2s;
+}
+.ul a li {
+  color: var(--text-color);
+  transition: 0.2s;
+  font-size: 18px;
+}
+.ul a:hover li {
+  color: darkgrey;
+}
+
+.ul a svg {
+  transition: 0.2s;
+  border-radius: 6px;
+  margin-right: 5px;
+  width: 32px;
+  height: 32px;
+  padding: 8px;
+  background-color: #2d2d2d;
+  fill: var(--text-color);
+}
+.ul a:hover svg {
+  fill: black;
+  background-color: #fff;
+}
+
+.ul a img {
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+@media (max-width: 973px) {
+  .sideBar{
+    background-color: black;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    z-index: 100;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 60px;
+  }
+  .sideBar .ul{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .ul a li {
+    width: max-content;
+  }
+}
+
+/* Scroll */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0.205);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #032541;
+}

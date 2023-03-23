@@ -1,0 +1,99 @@
+.content {
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.info span {
+  color: var(--text-color);
+  margin: 0 10px;
+}
+.dateStyle {
+  color: black !important;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 2px 7.5px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.smallInfo {
+  display: flex;
+  flex-basis: 25%;
+  justify-content: space-between;
+  padding-right: 5px;
+}
+.smallInfo p {
+  text-transform: uppercase;
+}
+.smallInfo span {
+  color: gray;
+}
+
+.ratings li {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.about {
+  padding: 10px;
+}
+.about h2 {
+  padding: 15px 0;
+  color: var(--text-color);
+}
+.about p {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 1.1rem;
+  background-image: linear-gradient(to top left, #ff45bb, #ffec7f);
+  letter-spacing: 1.5px;
+}
+
+.widthPercent {
+  height: 30px;
+  border-radius: 10px;
+}
+
+.mainInfo {
+  position: relative;
+  padding: 30px;
+  flex: 6;
+}
+.screenShoots {
+  flex: 5;
+}
+
+.secondScreens {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+.mainScreen {
+  padding-bottom: 20px;
+}
+
+@media (max-width: 973px) {
+  .content {
+    flex-direction: column-reverse;
+  }
+  .screenShoots {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow-x: scroll;
+  }
+  .info span{
+    display: inline-block;
+    margin: 5px 0;
+  }
+  .secondScreens{
+    padding-left: 20px;
+    display: flex;
+  }
+  .secondScreens img {
+    object-fit: cover;
+  }
+}
