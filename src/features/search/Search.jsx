@@ -13,7 +13,7 @@ function Search() {
   const { API } = useApi();
   const { display } = useDisplayOptions();
   const [listOfGames, setListOfGames] = useState([]);
-  const [listCount, setListCount] = useState(1);
+  let [listCount, setListCount] = useState(1);
   const { searchText } = useContext(AppContext);
 
   function getGames() {
@@ -33,6 +33,12 @@ function Search() {
       })
       .catch((err) => console.log(err));
   }
+
+  useEffect(() => {
+    setListCount = 1;
+    listOfGames.length = 0;
+    setListOfGames([]);
+  }, [searchText]);
 
   useEffect(() => {
     getGames();

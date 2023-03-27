@@ -42,9 +42,9 @@ li {
 /* Scroll */
 ::-webkit-scrollbar {
   width: 10px;
-  background-color: rgba(0, 0, 0, 0.205);
+  background-color: #fff;
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: #032541;
+  background-color: #fff;
 }

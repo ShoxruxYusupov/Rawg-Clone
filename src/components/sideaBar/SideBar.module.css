@@ -77,9 +77,9 @@
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
-  background-color: rgba(0, 0, 0, 0.205);
+  background-color: var(--box-bg-color);
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: #032541;
+  background-color: var(--text-color);
 }

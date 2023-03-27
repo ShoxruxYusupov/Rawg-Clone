@@ -55,7 +55,7 @@ function Favorite() {
         }
       >
         {listOfGames.length !== 0
-          ? listOfGames.map((item) => {
+          ? listOfGames.reverse().map((item) => {
               return (
                 <GameBox
                   key={item.id}
